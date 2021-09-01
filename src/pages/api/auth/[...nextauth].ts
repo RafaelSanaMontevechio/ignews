@@ -21,8 +21,6 @@ export default NextAuth({
       const { email } = user;
 
       try {
-        await fauna.query(q.Create(q.Collection('users'), { data: { email } }));
-
         await fauna.query(
           q.If(
             q.Not(
@@ -35,7 +33,9 @@ export default NextAuth({
           ),
         );
         return true;
-      } catch {
+      } catch (error) {
+        console.log('error', error);
+
         return false;
       }
     },
