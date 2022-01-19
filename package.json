@@ -23,11 +23,17 @@
     "stripe": "^8.169.0"
   },
   "devDependencies": {
+    "@testing-library/dom": "^8.11.2",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
     "@types/node": "^16.4.13",
     "@types/prismic-dom": "^2.1.1",
     "@types/react": "^17.0.16",
+    "babel-jest": "^27.4.6",
     "eslint": "7.32.0",
     "eslint-config-next": "11.0.1",
+    "jest": "^27.4.7",
+    "jest-dom": "^4.0.0",
     "typescript": "^4.3.5"
   }
 }
