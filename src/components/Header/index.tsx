@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import Logo from '../../../public/images/logo.svg';
+// import Logo from '../../../public/images/logo.svg';
 
 import { SignInButton } from '../SignInButton';
 
@@ -12,7 +12,7 @@ export function Header() {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
-        <Image src={Logo} alt="ig.news" />
+        <Image src="/images/logo.svg" alt="ignews" />
         <nav>
           <ActiveLink activeClassName={styles.active} href="/">
             <a>Home</a>
